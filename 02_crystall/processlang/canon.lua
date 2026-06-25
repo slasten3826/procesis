@@ -57,12 +57,6 @@ canon.operators = {
         core = "x*→pattern",
         adjacent = {"☰", "☴", "☱", "☳", "☲"},
     },
-    ["☳"] = {
-        name = "CHOOSE",
-        layers = {"⊞", "◈"},
-        core = "{paths}→1",
-        adjacent = {"☷", "☴", "☱", "☵", "☶"},
-    },
     ["☲"] = {
         name = "CYCLE",
         layers = {"◈"},
@@ -74,6 +68,12 @@ canon.operators = {
         layers = {"◈"},
         core = "rules(x)",
         adjacent = {"☳", "☲", "☱", "△"},
+    },
+    ["☳"] = {
+        name = "CHOOSE",
+        layers = {"⊞", "◈"},
+        core = "{paths}→1",
+        adjacent = {"☷", "☴", "☱", "☵", "☶"},
     },
     ["☱"] = {
         name = "RUNTIME",
@@ -89,8 +89,10 @@ canon.operators = {
     },
 }
 
-canon.inventory_order = {"▽", "☰", "☷", "☵", "☳", "☴", "☲", "☶", "☱", "△"}
-canon.trace_order = {"▽", "☰", "☷", "☴", "☵", "☲", "☶", "☳", "☱", "△"}
+canon.chronological_order = {"▽", "☰", "☷", "☴", "☵", "☲", "☶", "☳", "☱", "△"}
+canon.canonical_order = {"▽", "☰", "☷", "☵", "☳", "☴", "☲", "☶", "☱", "△"}
+canon.inventory_order = canon.canonical_order
+canon.trace_order = canon.chronological_order
 
 canon.aliases = {}
 for glyph, operator in pairs(canon.operators) do

@@ -1,5 +1,5 @@
 {
-  "id": "slasten.stak2.chaos-index",
+  "id": "procesis.chaos-index",
   "version": "0.0.1",
   "artifacts": [
     {
@@ -21,6 +21,16 @@
       "lines": 60,
       "compiled_into": [
         "02_crystall/dissipative_math.v0.json"
+      ]
+    },
+    {
+      "path": "00_chaos/packet_zig.raw/",
+      "source": "~/docs/UPM/packet_zig/",
+      "role": "raw Zig packet prototype: mortal process body, layered execution, PU-bounded lifecycle",
+      "preservation": "selected file copy; excludes project_dump.txt and external UPM math specs",
+      "lines": 2627,
+      "compiled_into": [
+        "02_crystall/packet.v0.json"
       ]
     }
   ]

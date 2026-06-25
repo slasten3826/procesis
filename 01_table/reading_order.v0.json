@@ -1,5 +1,5 @@
 {
-  "id": "slasten.stak2.reading-order",
+  "id": "procesis.reading-order",
   "version": "0.0.1",
   "mode": "single_pass_ingestion",
   "order": [
@@ -20,16 +20,26 @@
     },
     {
       "step": 4,
+      "path": "02_crystall/packet.v0.json",
+      "purpose": "load packet as mortal process body"
+    },
+    {
+      "step": 5,
+      "path": "02_crystall/packet.mortality_myth.v0.json",
+      "purpose": "load packet mortality myth and death-residue orientation"
+    },
+    {
+      "step": 6,
       "path": "02_crystall/bootstrap.v0.json",
       "purpose": "load core ontology and bootstrap frame"
     },
     {
-      "step": 5,
+      "step": 7,
       "path": "02_crystall/origin.myth.v0.json",
       "purpose": "load origin chain and raw/canon relation"
     },
     {
-      "step": 6,
+      "step": 8,
       "path": "03_manifest/capsule.full.v0.json",
       "purpose": "load final capsule when available"
     }

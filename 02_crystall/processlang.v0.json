@@ -65,13 +65,6 @@
       "adjacent": ["☰", "☴", "☱", "☳", "☲"]
     },
     {
-      "glyph": "☳",
-      "name": "CHOOSE",
-      "layers": ["⊞", "◈"],
-      "core": "{paths}→1",
-      "adjacent": ["☷", "☴", "☱", "☵", "☶"]
-    },
-    {
       "glyph": "☲",
       "name": "CYCLE",
       "layers": ["◈"],
@@ -84,6 +77,13 @@
       "layers": ["◈"],
       "core": "rules(x)",
       "adjacent": ["☳", "☲", "☱", "△"]
+    },
+    {
+      "glyph": "☳",
+      "name": "CHOOSE",
+      "layers": ["⊞", "◈"],
+      "core": "{paths}→1",
+      "adjacent": ["☷", "☴", "☱", "☵", "☶"]
     },
     {
       "glyph": "☱",
@@ -101,9 +101,16 @@
     }
   ],
   "orders": {
+    "canonical_order_source": "kabbalah_tree_operator_binding",
+    "chronological_order_source": "source_appearance_and_trace_reading",
+    "chronological_order": ["▽", "☰", "☷", "☴", "☵", "☲", "☶", "☳", "☱", "△"],
+    "chronological_operator_order": ["FLOW", "CONNECT", "DISSOLVE", "OBSERVE", "ENCODE", "CYCLE", "LOGIC", "CHOOSE", "RUNTIME", "MANIFEST"],
+    "canonical_order": ["▽", "☰", "☷", "☵", "☳", "☴", "☲", "☶", "☱", "△"],
+    "canonical_operator_order": ["FLOW", "CONNECT", "DISSOLVE", "ENCODE", "CHOOSE", "OBSERVE", "CYCLE", "LOGIC", "RUNTIME", "MANIFEST"],
     "inventory_order": ["▽", "☰", "☷", "☵", "☳", "☴", "☲", "☶", "☱", "△"],
     "trace_order": ["▽", "☰", "☷", "☴", "☵", "☲", "☶", "☳", "☱", "△"],
-    "canonical_full_trace": ["▽", "☰", "☷", "☴", "☵", "☲", "☶", "☳", "☱", "△"]
+    "chronological_full_trace": ["▽", "☰", "☷", "☴", "☵", "☲", "☶", "☳", "☱", "△"],
+    "canonical_full_trace": ["▽", "☰", "☷", "☵", "☳", "☴", "☲", "☶", "☱", "△"]
   },
   "state_transfer": {
     "trace": "topology-constrained state packet",

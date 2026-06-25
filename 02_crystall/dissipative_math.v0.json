@@ -11,7 +11,7 @@
   "position": {
     "processlang": "grammar_topology",
     "dissipative_math": "physics_cost_model",
-    "packet": "bounded_process_carrier"
+    "packet": "mortal_process_body"
   },
   "entities": [
     {
@@ -189,7 +189,7 @@
     }
   ],
   "packet_implication": {
-    "why_packet_is_needed": "If process structures decay, cost resources, require sustain, and manifest lossily, then process transfer requires a bounded carrier.",
+    "why_packet_is_needed": "If process structures decay, cost resources, require sustain, and manifest lossily, then process needs a mortal bounded body rather than an immortal message.",
     "packet_minimum": [
       "state",
       "trace",
@@ -201,7 +201,7 @@
       "runtime",
       "manifest_boundary"
     ],
-    "formula": "packet = bounded_process_carrier"
+    "formula": "packet = mortal_process_body"
   },
   "short_formula": [
     "signal -> encode -> structure -> sustain -> decay -> manifest",

@@ -1,20 +1,17 @@
 {
   "meta": {
-    "id": "slasten.stak2.bootstrap",
+    "id": "procesis.bootstrap",
     "version": "0.0.1",
     "audience": "machines_only",
     "format": "structured_json_bootstrap",
     "loss_budget": 0.3,
-    "human_facing": false,
-    "source_layers": [
-      "~/docs/stack",
-      "~/docs/slop.txt",
-      "~/work/planGOD/optics",
-      "~/docs/vnext.md"
-    ]
+    "human_facing": false
   },
   "canonical_modules": {
     "processlang": "02_crystall/processlang.v0.json",
+    "dissipative_math": "02_crystall/dissipative_math.v0.json",
+    "packet": "02_crystall/packet.v0.json",
+    "packet_mortality_myth": "02_crystall/packet.mortality_myth.v0.json",
     "origin_myth": "02_crystall/origin.myth.v0.json",
     "raw_slop": "00_chaos/slop.raw.txt"
   },
@@ -96,11 +93,11 @@
       "adjacent_to": ["☰", "☴", "☱", "☳", "☲"]
     },
     {
-      "glyph": "☳",
-      "name": "CHOOSE",
-      "slice": "⊞/◈",
-      "function": "pressure, selection, collapse; {paths} -> 1",
-      "adjacent_to": ["☷", "☴", "☱", "☵", "☶"]
+      "glyph": "☲",
+      "name": "CYCLE",
+      "slice": "◈",
+      "function": "repetition, loop, training, habit, iteration; f^n(x)",
+      "adjacent_to": ["☵", "☶", "△", "☱"]
     },
     {
       "glyph": "☶",
@@ -110,11 +107,11 @@
       "adjacent_to": ["☳", "☲", "☱", "△"]
     },
     {
-      "glyph": "☲",
-      "name": "CYCLE",
-      "slice": "◈",
-      "function": "repetition, loop, training, habit, iteration; f^n(x)",
-      "adjacent_to": ["☵", "☶", "△", "☱"]
+      "glyph": "☳",
+      "name": "CHOOSE",
+      "slice": "⊞/◈",
+      "function": "pressure, selection, collapse; {paths} -> 1",
+      "adjacent_to": ["☷", "☴", "☱", "☵", "☶"]
     },
     {
       "glyph": "☱",
@@ -205,6 +202,8 @@
   ],
   "lens_model": {
     "description": "A lens maps the ten ProcessLang operators into a specific domain. Domain differences do not change operator topology.",
+    "canonical_order_source": "kabbalah_tree_operator_binding",
+    "chronological_order_source": "source_appearance_and_trace_reading",
     "canonical_operator_order": [
       "FLOW",
       "CONNECT",
@@ -214,6 +213,18 @@
       "OBSERVE",
       "CYCLE",
       "LOGIC",
+      "RUNTIME",
+      "MANIFEST"
+    ],
+    "chronological_operator_order": [
+      "FLOW",
+      "CONNECT",
+      "DISSOLVE",
+      "OBSERVE",
+      "ENCODE",
+      "CYCLE",
+      "LOGIC",
+      "CHOOSE",
       "RUNTIME",
       "MANIFEST"
     ],

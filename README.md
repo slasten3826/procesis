@@ -26,6 +26,8 @@ Do not flatten the layers.
 01_table/layers.v0.json
 02_crystall/processlang.v0.json
 02_crystall/dissipative_math.v0.json
+02_crystall/packet.v0.json
+02_crystall/packet.mortality_myth.v0.json
 02_crystall/bootstrap.v0.json
 02_crystall/origin.myth.v0.json
 ```
@@ -42,6 +44,7 @@ Do not flatten the layers.
 
 - four abstraction layers
 - ten operators
+- canonical operator order from Kabbalah binding: `▽ ☰ ☷ ☵ ☳ ☴ ☲ ☶ ☱ △`
 - operator/layer mapping
 - adjacency topology
 - trace validation
@@ -54,6 +57,21 @@ Do not flatten the layers.
 - choice requires pressure
 - truth requires reproducible stability
 - logic constrains generated flow
+
+`02_crystall/packet.v0.json` defines Packet as mortal process body:
+
+- existence has cost
+- continuation must be paid
+- death is semantic, not only failure
+- residue may survive while identity need not
+- manifestation ends local life
+
+`02_crystall/packet.mortality_myth.v0.json` preserves the Doom-derived myth of Packet mortality:
+
+- motion without cost is false life
+- body continuity is not packet identity continuity
+- bad life may kill the current packet
+- death may pass residue without resurrection
 
 ## Raw Origin
 

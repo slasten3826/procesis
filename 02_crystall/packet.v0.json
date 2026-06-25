@@ -1,0 +1,207 @@
+{
+  "id": "procesis.packet",
+  "version": "0.0.1",
+  "status": "canonical_crystall_module",
+  "role": "mortal_process_body",
+  "raw_anchor": "00_chaos/packet_zig.raw/",
+  "depends_on": [
+    "02_crystall/processlang.v0.json",
+    "02_crystall/dissipative_math.v0.json"
+  ],
+  "research_anchors": {
+    "zig_packet_prototype": "00_chaos/packet_zig.raw/",
+    "doom2packet_mortality_probe": "~/work/doom2packet",
+    "packet_slop_neural_transfer_probe": "~/work/packetLearning/packet-slop",
+    "mortality_myth": "02_crystall/packet.mortality_myth.v0.json"
+  },
+  "thesis": "Packet is a mortal executable process body: it exists only while its process cost can be paid, and death is part of its semantics.",
+  "negative_identity": [
+    "not_message",
+    "not_payload",
+    "not_transport_unit",
+    "not_prompt",
+    "not_agent_identity",
+    "not_immortal_program",
+    "not_free_runtime"
+  ],
+  "positive_identity": [
+    "mortal_process_body",
+    "bounded_life_of_form",
+    "topology_bound_execution_body",
+    "cost_bearing_crystal",
+    "death_capable_runtime",
+    "residue_emitting_process"
+  ],
+  "core_formula": [
+    "packet = mortal_process_body",
+    "life(packet) = ticks affordable by internal cost",
+    "death(packet) is semantic boundary, not implementation failure",
+    "continuation must be earned",
+    "bad trajectories must be allowed to die"
+  ],
+  "source_reading": {
+    "zig_prototype": "Shows the invariant physically: substrate, PU budget, chaos ticks, boundary crystallization, calm execution, tension, manifest, and halt.",
+    "doom2packet": "Shows mortality operationally: body can die, soul/process can also die from wasted existence, and only compact death residue should pass forward.",
+    "packet_slop": "Transfers packet logic onto neural/process rails; useful as research trace, not the primary invariant source."
+  },
+  "layers": [
+    {
+      "name": "substrate",
+      "source_layer": "Layer 0",
+      "meaning": "hardware/runtime body: memory, IO, clock, PU budget",
+      "processlang_slice": ["RUNTIME"],
+      "invariant": "a packet has an execution body and cannot live outside a sustaining substrate"
+    },
+    {
+      "name": "chaos",
+      "source_layer": "Layer 1",
+      "meaning": "living mutable field before stable form",
+      "processlang_slice": ["FLOW", "CONNECT", "DISSOLVE"],
+      "invariant": "raw process life is self-modifying, irreversible, tick-bound, and not yet memory"
+    },
+    {
+      "name": "boundary",
+      "source_layer": "Layer 2",
+      "meaning": "observation, choice, and crystallization boundary between living pressure and formed execution",
+      "processlang_slice": ["ENCODE", "CHOOSE", "OBSERVE"],
+      "invariant": "form is selected and crystallized only through a costly boundary"
+    },
+    {
+      "name": "calm",
+      "source_layer": "Layer 3",
+      "meaning": "deterministic executable crystal",
+      "processlang_slice": ["CONNECT", "DISSOLVE", "ENCODE", "CHOOSE", "OBSERVE", "CYCLE", "LOGIC", "RUNTIME", "MANIFEST"],
+      "invariant": "crystallized form can execute, but it is not identical to living chaos"
+    },
+    {
+      "name": "tension",
+      "source_layer": "Layer 4",
+      "meaning": "price of holding form against chaos and exhaustion",
+      "processlang_slice": ["DISSOLVE", "CYCLE", "RUNTIME", "MANIFEST"],
+      "invariant": "a crystal must be held, reinforced, released back to chaos, or manifested"
+    }
+  ],
+  "mortality": {
+    "axiom": "A packet is finite unless explicitly sustained.",
+    "life_sources": [
+      "PU budget",
+      "runtime sustain",
+      "body integrity",
+      "useful progress",
+      "reinforcement by successful action"
+    ],
+    "death_causes": [
+      "PU exhaustion",
+      "body death",
+      "bad loop repetition",
+      "stagnation",
+      "unproductive motion",
+      "invalid topology",
+      "loss beyond sustain threshold",
+      "manifest boundary"
+    ],
+    "death_modes": [
+      {
+        "name": "manifest_death",
+        "meaning": "local process ends by becoming output or boundary projection"
+      },
+      {
+        "name": "dissolve_death",
+        "meaning": "form loses sustain and returns to unresolved flow"
+      },
+      {
+        "name": "budget_death",
+        "meaning": "process loses the right to continue because existence cost is unpaid"
+      },
+      {
+        "name": "body_death",
+        "meaning": "embodied substrate can no longer host the current packet"
+      },
+      {
+        "name": "semantic_death",
+        "meaning": "identity of the packet does not continue, but compact residue may remain"
+      }
+    ],
+    "residue_rule": "Death may leave minimal process residue, not preserved identity.",
+    "doom2packet_residue_formula": "this led to death; do not repeat it"
+  },
+  "economics": {
+    "PU": "process life capacity, not external accounting decoration",
+    "loss": "irreversible cost of forming, holding, transporting, or manifesting",
+    "tick": "unit of lived process time",
+    "crystal_stock": "encoded form may carry remaining life/cost as temporary stock",
+    "continuation_rule": "continuation requires budget, sustain, or successful reinforcement"
+  },
+  "operator_interpretation": [
+    {
+      "operator": "FLOW",
+      "packet_role": "starts or continues raw process life"
+    },
+    {
+      "operator": "CONNECT",
+      "packet_role": "forms relation inside the body without making persistence by itself"
+    },
+    {
+      "operator": "DISSOLVE",
+      "packet_role": "loosens form, breaks stale continuation, or returns structure toward flow"
+    },
+    {
+      "operator": "ENCODE",
+      "packet_role": "crystallizes living pressure into a formed executable body"
+    },
+    {
+      "operator": "CHOOSE",
+      "packet_role": "collapses possible continuation under pressure"
+    },
+    {
+      "operator": "OBSERVE",
+      "packet_role": "measures body/world/process state without becoming the body"
+    },
+    {
+      "operator": "CYCLE",
+      "packet_role": "extends form across ticks while cost remains payable"
+    },
+    {
+      "operator": "LOGIC",
+      "packet_role": "constrains continuation by law, likelihood, or admissibility"
+    },
+    {
+      "operator": "RUNTIME",
+      "packet_role": "sustains, remembers, and spends the current process body"
+    },
+    {
+      "operator": "MANIFEST",
+      "packet_role": "ends local process by exposing form to the world"
+    }
+  ],
+  "packet_network_position": {
+    "status": "derived_mode",
+    "definition": "packet-network is a packet body interpreted as receptive admission surface",
+    "not_core_identity": "packet is not reducible to network or transport",
+    "core_relation": "a mortal process body can receive operators, roles, contexts, and projections while it remains alive"
+  },
+  "implementation_relation": {
+    "zig": "raw invariant body; closest current source for packet mortality",
+    "doom": "embodiment proof; death and residue become operationally visible",
+    "packet_slop": "neural transfer attempt; useful to understand forms-in-time and Bayesian runtime",
+    "lua": "likely research/runtime manifestation after law stabilizes",
+    "network": "boundary/export behavior, not packet identity"
+  },
+  "invariants": [
+    "packet_is_mortal",
+    "existence_has_cost",
+    "death_is_semantic",
+    "continuation_must_be_paid",
+    "bad_patterns_may_die_instead_of_being_repaired",
+    "residue_may_survive_identity_need_not",
+    "form_can_crystallize_without_becoming_eternal",
+    "runtime_holds_form_temporarily",
+    "manifestation_ends_local_life",
+    "topology_constrains_valid_life"
+  ],
+  "short_formula": [
+    "body + budget + tick + topology = packet life",
+    "chaos -> boundary -> crystal -> tension -> manifest/death",
+    "packet does not merely run; packet lives and can die"
+  ]
+}

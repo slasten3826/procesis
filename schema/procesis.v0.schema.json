@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/slasten3826/stak2/schema/stak2.v0.schema.json",
-  "title": "stak2 Bootstrap Corpus v0",
+  "$id": "https://github.com/slasten3826/procesis/schema/procesis.v0.schema.json",
+  "title": "procesis Bootstrap Corpus v0",
   "type": "object",
   "required": [
     "meta",
