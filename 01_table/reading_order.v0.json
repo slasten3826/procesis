@@ -15,16 +15,21 @@
     },
     {
       "step": 3,
+      "path": "02_crystall/dissipative_math.v0.json",
+      "purpose": "load process physics and cost model"
+    },
+    {
+      "step": 4,
       "path": "02_crystall/bootstrap.v0.json",
       "purpose": "load core ontology and bootstrap frame"
     },
     {
-      "step": 4,
+      "step": 5,
       "path": "02_crystall/origin.myth.v0.json",
       "purpose": "load origin chain and raw/canon relation"
     },
     {
-      "step": 5,
+      "step": 6,
       "path": "03_manifest/capsule.full.v0.json",
       "purpose": "load final capsule when available"
     }

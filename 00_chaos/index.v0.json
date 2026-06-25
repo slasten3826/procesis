@@ -12,6 +12,16 @@
         "02_crystall/bootstrap.v0.json",
         "02_crystall/origin.myth.v0.json"
       ]
+    },
+    {
+      "path": "00_chaos/dissipative_math.raw.md",
+      "source": "~/docs/философия/Диссипативная математика.md",
+      "role": "raw human-facing dissipative mathematics source",
+      "preservation": "byte-identical copy",
+      "lines": 60,
+      "compiled_into": [
+        "02_crystall/dissipative_math.v0.json"
+      ]
     }
   ]
 }

@@ -25,6 +25,7 @@ Do not flatten the layers.
 ```text
 01_table/layers.v0.json
 02_crystall/processlang.v0.json
+02_crystall/dissipative_math.v0.json
 02_crystall/bootstrap.v0.json
 02_crystall/origin.myth.v0.json
 ```
@@ -44,6 +45,15 @@ Do not flatten the layers.
 - operator/layer mapping
 - adjacency topology
 - trace validation
+
+`02_crystall/dissipative_math.v0.json` is the current process physics module:
+
+- structure has cost
+- existence requires sustain
+- decay is default
+- choice requires pressure
+- truth requires reproducible stability
+- logic constrains generated flow
 
 ## Raw Origin
 

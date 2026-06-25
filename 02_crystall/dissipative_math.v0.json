@@ -1,0 +1,213 @@
+{
+  "id": "procesis.dissipative_math",
+  "version": "0.0.1",
+  "status": "canonical_crystall_module",
+  "role": "process_physics",
+  "raw_anchor": "00_chaos/dissipative_math.raw.md",
+  "depends_on": [
+    "02_crystall/processlang.v0.json"
+  ],
+  "thesis": "Structure, truth, choice, and existence are sustained processes with cost, decay, and runtime dependence.",
+  "position": {
+    "processlang": "grammar_topology",
+    "dissipative_math": "physics_cost_model",
+    "packet": "bounded_process_carrier"
+  },
+  "entities": [
+    {
+      "name": "signal",
+      "meaning": "raw flow or difference before stabilization"
+    },
+    {
+      "name": "structure",
+      "meaning": "held form produced from signal by selection, compression, or encoding"
+    },
+    {
+      "name": "state",
+      "meaning": "current configuration of a structure inside runtime"
+    },
+    {
+      "name": "flow",
+      "meaning": "energy, attention, computation, participation, or sustaining throughput"
+    },
+    {
+      "name": "engagement",
+      "meaning": "active involvement that keeps a structure above its sustain threshold"
+    },
+    {
+      "name": "pressure",
+      "meaning": "force required to select, suppress alternatives, or stabilize a direction"
+    },
+    {
+      "name": "decay",
+      "meaning": "natural loss of structure, causality, interpretation, or runtime viability"
+    },
+    {
+      "name": "runtime",
+      "meaning": "environment in which a structure is held, transformed, reproduced, or lost"
+    },
+    {
+      "name": "cost",
+      "meaning": "resource burden of structure formation, maintenance, choice, and manifestation"
+    },
+    {
+      "name": "loss",
+      "meaning": "irreversible difference discarded or distorted by encoding, transfer, or manifestation"
+    },
+    {
+      "name": "stability",
+      "meaning": "reproducible persistence of relation or structure over a time window"
+    }
+  ],
+  "axioms": [
+    {
+      "id": "A1",
+      "name": "structure_is_not_free",
+      "statement": "Any structure is an act of compression, selection, or holding and therefore has cost.",
+      "minimal_form": "cost(structure) > 0 unless explicitly modeled as static idealization"
+    },
+    {
+      "id": "A2",
+      "name": "existence_is_sustained",
+      "statement": "An object exists in runtime only while its engagement remains above its sustain threshold.",
+      "minimal_form": "exists(x,t) := engagement(x,t) > threshold(x)"
+    },
+    {
+      "id": "A3",
+      "name": "decay_is_normal",
+      "statement": "Any held form without sufficient flow enters decay.",
+      "minimal_form": "if flow(x,t) <= sustain_min(x) then decay(x,t) increases"
+    },
+    {
+      "id": "A4",
+      "name": "choice_requires_pressure",
+      "statement": "Choice is not free selection; it is suppression of alternatives under pressure.",
+      "minimal_form": "choose(S)=y requires pressure >= separation_cost(S)"
+    },
+    {
+      "id": "A5",
+      "name": "truth_is_sustained_stability",
+      "statement": "Truth is stable reproduction of a relation or reaction within a runtime window.",
+      "minimal_form": "truth(p,t) := stable_reproduction(p, window_t)"
+    },
+    {
+      "id": "A6",
+      "name": "logic_is_secondary_to_generation",
+      "statement": "Logic does not generate flow; logic filters, constrains, stabilizes, and rejects.",
+      "minimal_form": "signal -> selection/filter -> structure"
+    }
+  ],
+  "functions": [
+    {
+      "name": "generate",
+      "signature": "generate(runtime, seed, noise) -> signal",
+      "operator_binding": ["FLOW"]
+    },
+    {
+      "name": "encode",
+      "signature": "encode(signal) -> structure",
+      "operator_binding": ["ENCODE"],
+      "loss": "encoding discards differences"
+    },
+    {
+      "name": "sustain",
+      "signature": "sustain(structure, flow) -> state'",
+      "operator_binding": ["RUNTIME", "CYCLE"]
+    },
+    {
+      "name": "choose",
+      "signature": "choose({path_1 ... path_n}, pressure) -> path_k",
+      "operator_binding": ["CHOOSE"],
+      "cost": "suppression of non-selected alternatives"
+    },
+    {
+      "name": "decay",
+      "signature": "decay(structure, dt) -> structure'",
+      "operator_binding": ["DISSOLVE"]
+    },
+    {
+      "name": "observe",
+      "signature": "observe(state, runtime) -> measurement",
+      "operator_binding": ["OBSERVE"]
+    },
+    {
+      "name": "logic_filter",
+      "signature": "logic_filter(signal_or_structure, rules) -> accepted_or_rejected",
+      "operator_binding": ["LOGIC"]
+    },
+    {
+      "name": "manifest",
+      "signature": "manifest(structure, runtime) -> observable",
+      "operator_binding": ["MANIFEST"],
+      "loss": "manifestation exports a bounded representation, not the full process"
+    }
+  ],
+  "invariants": [
+    "structure_has_cost",
+    "existence_requires_sustain",
+    "decay_is_default",
+    "choice_requires_pressure",
+    "truth_requires_reproduction",
+    "logic_constrains_flow",
+    "manifestation_is_lossy",
+    "runtime_is_not_optional"
+  ],
+  "static_math_relation": {
+    "zfc": "static_limit_case",
+    "static_assumptions": [
+      "structure cost is ignored",
+      "decay is ignored",
+      "existence is postulated",
+      "choice has no thermodynamic price",
+      "truth is independent of sustain",
+      "logic is treated as primary"
+    ],
+    "dissipative_replacements": [
+      "object is held",
+      "structure has cost",
+      "choice requires pressure",
+      "truth is maintained",
+      "logic filters generated flow"
+    ]
+  },
+  "decay_types": [
+    {
+      "name": "structural_decay",
+      "meaning": "loss of form"
+    },
+    {
+      "name": "semantic_decay",
+      "meaning": "loss of interpretability"
+    },
+    {
+      "name": "causal_decay",
+      "meaning": "loss of reproducible relation"
+    },
+    {
+      "name": "runtime_decay",
+      "meaning": "loss of ability to be held by the environment"
+    }
+  ],
+  "packet_implication": {
+    "why_packet_is_needed": "If process structures decay, cost resources, require sustain, and manifest lossily, then process transfer requires a bounded carrier.",
+    "packet_minimum": [
+      "state",
+      "trace",
+      "cost",
+      "loss",
+      "decay",
+      "engagement",
+      "pressure",
+      "runtime",
+      "manifest_boundary"
+    ],
+    "formula": "packet = bounded_process_carrier"
+  },
+  "short_formula": [
+    "signal -> encode -> structure -> sustain -> decay -> manifest",
+    "existence = sustain",
+    "truth = reproducible_stability",
+    "choice = pressure",
+    "logic = flow_constraint"
+  ]
+}
