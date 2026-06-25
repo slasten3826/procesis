@@ -1,0 +1,57 @@
+{
+  "id": "slasten.stak2.layers",
+  "version": "0.0.1",
+  "layers": [
+    {
+      "id": "00_chaos",
+      "glyph": "⋯",
+      "name": "chaos",
+      "role": "raw source, unprocessed emergence, source artifacts that preserve first occurrence",
+      "examples": [
+        "slop.raw.txt",
+        "raw oral fragments",
+        "uncompiled source dumps"
+      ],
+      "rule": "preserve raw continuity"
+    },
+    {
+      "id": "01_table",
+      "glyph": "⊞",
+      "name": "table",
+      "role": "addressability, maps, indexes, loading order, source-to-module routing",
+      "examples": [
+        "layers.v0.json",
+        "reading_order.v0.json",
+        "source_map.v0.json"
+      ],
+      "rule": "make every source and module addressable"
+    },
+    {
+      "id": "02_crystall",
+      "glyph": "◈",
+      "name": "crystall",
+      "role": "stable canon modules compiled from raw and mapped sources",
+      "examples": [
+        "bootstrap.v0.json",
+        "origin.myth.v0.json",
+        "processlang.v0.json",
+        "sephirot.v0.json",
+        "lenses.v0.json"
+      ],
+      "rule": "hold stable machine-readable forms"
+    },
+    {
+      "id": "03_manifest",
+      "glyph": "▲",
+      "name": "manifest",
+      "role": "ready-to-load capsules and external package surfaces",
+      "examples": [
+        "capsule.full.v0.json",
+        "capsule.quick.v0.json",
+        "agent_boot.prompt.txt"
+      ],
+      "rule": "provide complete ingestion artifacts"
+    }
+  ],
+  "transition": "00_chaos -> 01_table -> 02_crystall -> 03_manifest"
+}

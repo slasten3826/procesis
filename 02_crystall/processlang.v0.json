@@ -1,0 +1,125 @@
+{
+  "id": "procesis.processlang",
+  "version": "0.0.1",
+  "status": "canonical_crystall_module",
+  "source_anchors": {
+    "canon_lua": "02_crystall/processlang/canon.lua"
+  },
+  "thesis": "ProcessLang transfers process state as topology-constrained traces.",
+  "layers": [
+    {
+      "glyph": "⋯",
+      "name": "chaos",
+      "meaning": "raw potential before stable holding"
+    },
+    {
+      "glyph": "⊞",
+      "name": "table",
+      "meaning": "addressability, relation layout, primary structure"
+    },
+    {
+      "glyph": "◈",
+      "name": "crystall",
+      "meaning": "stable form, assembled structure, operational holding"
+    },
+    {
+      "glyph": "▲",
+      "name": "manifest",
+      "meaning": "appeared object, exported result, world-facing thing"
+    }
+  ],
+  "operators": [
+    {
+      "glyph": "▽",
+      "name": "FLOW",
+      "layers": ["⋯"],
+      "core": "x→f→x′",
+      "adjacent": ["☰", "☷", "☴"]
+    },
+    {
+      "glyph": "☰",
+      "name": "CONNECT",
+      "layers": ["⋯", "⊞"],
+      "core": "a+b→rel",
+      "adjacent": ["▽", "☷", "☴", "☵"]
+    },
+    {
+      "glyph": "☷",
+      "name": "DISSOLVE",
+      "layers": ["⋯", "⊞"],
+      "core": "rel→parts",
+      "adjacent": ["▽", "☰", "☴", "☳"]
+    },
+    {
+      "glyph": "☴",
+      "name": "OBSERVE",
+      "layers": ["⊞"],
+      "core": "observe(x)",
+      "adjacent": ["▽", "☰", "☷", "☵", "☳", "☱"]
+    },
+    {
+      "glyph": "☵",
+      "name": "ENCODE",
+      "layers": ["⊞", "◈"],
+      "core": "x*→pattern",
+      "adjacent": ["☰", "☴", "☱", "☳", "☲"]
+    },
+    {
+      "glyph": "☳",
+      "name": "CHOOSE",
+      "layers": ["⊞", "◈"],
+      "core": "{paths}→1",
+      "adjacent": ["☷", "☴", "☱", "☵", "☶"]
+    },
+    {
+      "glyph": "☲",
+      "name": "CYCLE",
+      "layers": ["◈"],
+      "core": "iterate fⁿ(x)",
+      "adjacent": ["☵", "☶", "△", "☱"]
+    },
+    {
+      "glyph": "☶",
+      "name": "LOGIC",
+      "layers": ["◈"],
+      "core": "rules(x)",
+      "adjacent": ["☳", "☲", "☱", "△"]
+    },
+    {
+      "glyph": "☱",
+      "name": "RUNTIME",
+      "layers": ["◈"],
+      "core": "ctx→state′",
+      "adjacent": ["☴", "△", "☵", "☳", "☶", "☲"]
+    },
+    {
+      "glyph": "△",
+      "name": "MANIFEST",
+      "layers": ["▲"],
+      "core": "output",
+      "adjacent": ["☱", "☲", "☶"]
+    }
+  ],
+  "orders": {
+    "inventory_order": ["▽", "☰", "☷", "☵", "☳", "☴", "☲", "☶", "☱", "△"],
+    "trace_order": ["▽", "☰", "☷", "☴", "☵", "☲", "☶", "☳", "☱", "△"],
+    "canonical_full_trace": ["▽", "☰", "☷", "☴", "☵", "☲", "☶", "☳", "☱", "△"]
+  },
+  "state_transfer": {
+    "trace": "topology-constrained state packet",
+    "sentence": "walk log over operator topology",
+    "grammar": "current operator -> valid adjacent operator",
+    "invalid_transition_rule": "state first invalid transition before interpretation",
+    "question_suffix": "? marks query mode and is not part of topology"
+  },
+  "examples": [
+    {
+      "trace": "▽☰☴☵☴☰☴☱△",
+      "reading": "connection repeatedly corrected by observation until it becomes runtime and manifests"
+    },
+    {
+      "trace": "△☶☱☴▽?",
+      "reading": "reverse manifestation query: manifest -> logic -> runtime -> observe -> flow"
+    }
+  ]
+}

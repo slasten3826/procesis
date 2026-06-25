@@ -1,0 +1,33 @@
+{
+  "id": "slasten.stak2.reading-order",
+  "version": "0.0.1",
+  "mode": "single_pass_ingestion",
+  "order": [
+    {
+      "step": 1,
+      "path": "01_table/layers.v0.json",
+      "purpose": "load layer semantics"
+    },
+    {
+      "step": 2,
+      "path": "02_crystall/processlang.v0.json",
+      "purpose": "load ProcessLang canon and topology"
+    },
+    {
+      "step": 3,
+      "path": "02_crystall/bootstrap.v0.json",
+      "purpose": "load core ontology and bootstrap frame"
+    },
+    {
+      "step": 4,
+      "path": "02_crystall/origin.myth.v0.json",
+      "purpose": "load origin chain and raw/canon relation"
+    },
+    {
+      "step": 5,
+      "path": "03_manifest/capsule.full.v0.json",
+      "purpose": "load final capsule when available"
+    }
+  ],
+  "current_status": "capsule.full.v0.json is not generated yet; bootstrap.v0.json is the current working capsule seed"
+}
