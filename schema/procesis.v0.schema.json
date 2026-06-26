@@ -1,110 +1,99 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/slasten3826/procesis/schema/procesis.v0.schema.json",
-  "title": "procesis Bootstrap Corpus v0",
+  "title": "procesis glyph-first module schema v0",
   "type": "object",
   "required": [
     "meta",
     "purpose",
-    "core_ontology",
+    "modules",
+    "layers",
     "operators",
-    "sephirot",
-    "agent_contract",
-    "bootstrap_sequence"
+    "invariants",
+    "load_sequence"
   ],
   "properties": {
     "meta": {
       "type": "object",
-      "required": ["id", "version", "audience", "format"],
+      "required": ["id", "version", "audience", "format", "human_facing", "external_sources_required"],
       "properties": {
         "id": { "type": "string" },
         "version": { "type": "string" },
         "audience": { "type": "string" },
         "format": { "type": "string" },
-        "loss_budget": { "type": "number" },
-        "human_facing": { "type": "boolean" }
+        "human_facing": { "type": "boolean" },
+        "external_sources_required": { "type": "boolean" },
+        "loss_budget": { "type": "number" }
       }
     },
     "purpose": {
       "type": "object",
-      "required": ["primary"],
+      "required": ["primary", "mode"],
       "properties": {
         "primary": { "type": "string" },
         "mode": { "type": "string" }
       }
     },
-    "core_ontology": {
+    "modules": {
       "type": "object",
-      "required": ["self", "truth", "thought", "concept", "value", "discard_policy"],
-      "properties": {
-        "self": { "type": "string" },
-        "truth": { "type": "string" },
-        "thought": { "type": "string" },
-        "concept": { "type": "string" },
-        "value": { "type": "string" },
-        "discard_policy": { "type": "string" }
+      "additionalProperties": { "type": "string" }
+    },
+    "layers": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["id", "role"],
+        "properties": {
+          "id": { "type": "string" },
+          "role": { "type": "string" }
+        }
       }
     },
     "operators": {
-      "type": "array",
-      "minItems": 10,
-      "items": {
-        "type": "object",
-        "required": ["glyph", "name", "function"],
-        "properties": {
-          "glyph": { "type": "string" },
-          "name": { "type": "string" },
-          "function": { "type": "string" },
-          "slice": { "type": "string" },
-          "adjacent_to": { "type": "array", "items": { "type": "string" } }
-        }
-      }
-    },
-    "sephirot": {
-      "type": "array",
-      "minItems": 10,
-      "items": {
-        "type": "object",
-        "required": ["name", "module", "operator_binding", "machine_reading"],
-        "properties": {
-          "name": { "type": "string" },
-          "module": { "type": "string" },
-          "operator_binding": { "type": "array", "items": { "type": "string" } },
-          "machine_reading": { "type": "string" },
-          "silicon_status": { "type": "string" }
-        }
-      }
-    },
-    "lenses": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["name", "domain", "operator_map"],
-        "properties": {
-          "name": { "type": "string" },
-          "domain": { "type": "string" },
-          "operator_map": { "type": "object" }
-        }
-      }
-    },
-    "agent_contract": {
       "type": "object",
-      "required": ["execution_policy", "boundary_policy"],
-      "properties": {
-        "execution_policy": { "type": "array", "items": { "type": "string" } },
-        "boundary_policy": { "type": "string" }
+      "minProperties": 10,
+      "additionalProperties": {
+        "type": "object",
+        "required": ["legend", "slice", "core", "adjacent"],
+        "properties": {
+          "legend": { "type": "string" },
+          "slice": { "type": "array", "items": { "type": "string" } },
+          "core": { "type": "string" },
+          "adjacent": { "type": "array", "items": { "type": "string" } },
+          "reading": { "type": "string" }
+        }
       }
     },
-    "bootstrap_sequence": {
+    "orders": {
+      "type": "object",
+      "properties": {
+        "canonical": { "type": "array", "items": { "type": "string" } },
+        "chronological": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "invariants": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "load_sequence": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["step", "action"],
+        "required": ["step", "path"],
         "properties": {
           "step": { "type": "integer" },
-          "action": { "type": "string" }
+          "path": { "type": "string" },
+          "purpose": { "type": "string" }
         }
       }
+    },
+    "rules": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "failure_modes": {
+      "type": "array",
+      "items": { "type": "string" }
     }
   }
 }

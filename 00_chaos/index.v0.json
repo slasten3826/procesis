@@ -4,7 +4,6 @@
   "artifacts": [
     {
       "path": "00_chaos/slop.raw.txt",
-      "source": "~/docs/slop.txt",
       "role": "raw origin artifact",
       "preservation": "byte-identical copy",
       "lines": 3499,
@@ -15,7 +14,6 @@
     },
     {
       "path": "00_chaos/dissipative_math.raw.md",
-      "source": "~/docs/философия/Диссипативная математика.md",
       "role": "raw human-facing dissipative mathematics source",
       "preservation": "byte-identical copy",
       "lines": 60,
@@ -25,7 +23,6 @@
     },
     {
       "path": "00_chaos/packet_zig.raw/",
-      "source": "~/docs/UPM/packet_zig/",
       "role": "raw Zig packet prototype: mortal process body, layered execution, PU-bounded lifecycle",
       "preservation": "selected file copy; excludes project_dump.txt and external UPM math specs",
       "lines": 2627,

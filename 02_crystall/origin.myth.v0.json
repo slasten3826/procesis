@@ -5,10 +5,11 @@
   "human_facing": false,
   "status": "draft_from_author_oral_account",
   "purpose": "Preserve the origin sequence of slop.txt and the stack as a machine-readable myth.",
-  "source": {
-    "type": "author_recounting",
+  "capture": {
+    "type": "author_recounting_compressed_inside_procesis",
     "date_captured": "2026-06-25",
-    "loss_budget": 0.3
+    "loss_budget": 0.3,
+    "external_sources_required": false
   },
   "compression_rules": [
     "Preserve discovery sequence over emotional dramatization.",

@@ -21,8 +21,7 @@
       "role": "addressability, maps, indexes, loading order, source-to-module routing",
       "examples": [
         "layers.v0.json",
-        "reading_order.v0.json",
-        "source_map.v0.json"
+        "reading_order.v0.json"
       ],
       "rule": "make every source and module addressable"
     },
@@ -35,8 +34,9 @@
         "bootstrap.v0.json",
         "origin.myth.v0.json",
         "processlang.v0.json",
-        "sephirot.v0.json",
-        "lenses.v0.json"
+        "dissipative_math.v0.json",
+        "packet.v0.json",
+        "optics.v0.json"
       ],
       "rule": "hold stable machine-readable forms"
     },

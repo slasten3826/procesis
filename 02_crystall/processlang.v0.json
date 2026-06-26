@@ -2,7 +2,7 @@
   "id": "procesis.processlang",
   "version": "0.0.1",
   "status": "canonical_crystall_module",
-  "source_anchors": {
+  "internal_anchors": {
     "canon_lua": "02_crystall/processlang/canon.lua"
   },
   "thesis": "ProcessLang transfers process state as topology-constrained traces.",
