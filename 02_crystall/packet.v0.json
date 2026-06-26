@@ -46,35 +46,60 @@
       "name": "substrate",
       "source_layer": "Layer 0",
       "meaning": "hardware/runtime body: memory, IO, clock, PU budget",
-      "processlang_slice": ["RUNTIME"],
+      "processlang_slice": [
+        "☱"
+      ],
       "invariant": "a packet has an execution body and cannot live outside a sustaining substrate"
     },
     {
       "name": "chaos",
       "source_layer": "Layer 1",
       "meaning": "living mutable field before stable form",
-      "processlang_slice": ["FLOW", "CONNECT", "DISSOLVE"],
+      "processlang_slice": [
+        "▽",
+        "☰",
+        "☷"
+      ],
       "invariant": "raw process life is self-modifying, irreversible, tick-bound, and not yet memory"
     },
     {
       "name": "boundary",
       "source_layer": "Layer 2",
       "meaning": "observation, choice, and crystallization boundary between living pressure and formed execution",
-      "processlang_slice": ["ENCODE", "CHOOSE", "OBSERVE"],
+      "processlang_slice": [
+        "☵",
+        "☳",
+        "☴"
+      ],
       "invariant": "form is selected and crystallized only through a costly boundary"
     },
     {
       "name": "calm",
       "source_layer": "Layer 3",
       "meaning": "deterministic executable crystal",
-      "processlang_slice": ["CONNECT", "DISSOLVE", "ENCODE", "CHOOSE", "OBSERVE", "CYCLE", "LOGIC", "RUNTIME", "MANIFEST"],
+      "processlang_slice": [
+        "☰",
+        "☷",
+        "☵",
+        "☳",
+        "☴",
+        "☲",
+        "☶",
+        "☱",
+        "△"
+      ],
       "invariant": "crystallized form can execute, but it is not identical to living chaos"
     },
     {
       "name": "tension",
       "source_layer": "Layer 4",
       "meaning": "price of holding form against chaos and exhaustion",
-      "processlang_slice": ["DISSOLVE", "CYCLE", "RUNTIME", "MANIFEST"],
+      "processlang_slice": [
+        "☷",
+        "☲",
+        "☱",
+        "△"
+      ],
       "invariant": "a crystal must be held, reinforced, released back to chaos, or manifested"
     }
   ],
@@ -129,48 +154,18 @@
     "crystal_stock": "encoded form may carry remaining life/cost as temporary stock",
     "continuation_rule": "continuation requires budget, sustain, or successful reinforcement"
   },
-  "operator_interpretation": [
-    {
-      "operator": "FLOW",
-      "packet_role": "starts or continues raw process life"
-    },
-    {
-      "operator": "CONNECT",
-      "packet_role": "forms relation inside the body without making persistence by itself"
-    },
-    {
-      "operator": "DISSOLVE",
-      "packet_role": "loosens form, breaks stale continuation, or returns structure toward flow"
-    },
-    {
-      "operator": "ENCODE",
-      "packet_role": "crystallizes living pressure into a formed executable body"
-    },
-    {
-      "operator": "CHOOSE",
-      "packet_role": "collapses possible continuation under pressure"
-    },
-    {
-      "operator": "OBSERVE",
-      "packet_role": "measures body/world/process state without becoming the body"
-    },
-    {
-      "operator": "CYCLE",
-      "packet_role": "extends form across ticks while cost remains payable"
-    },
-    {
-      "operator": "LOGIC",
-      "packet_role": "constrains continuation by law, likelihood, or admissibility"
-    },
-    {
-      "operator": "RUNTIME",
-      "packet_role": "sustains, remembers, and spends the current process body"
-    },
-    {
-      "operator": "MANIFEST",
-      "packet_role": "ends local process by exposing form to the world"
-    }
-  ],
+  "operator_interpretation": {
+    "▽": "starts or continues raw process life",
+    "☰": "forms relation inside the body without making persistence by itself",
+    "☷": "loosens form, breaks stale continuation, or returns structure toward flow",
+    "☵": "crystallizes living pressure into a formed executable body",
+    "☳": "collapses possible continuation under pressure",
+    "☴": "measures body/world/process state without becoming the body",
+    "☲": "extends form across ticks while cost remains payable",
+    "☶": "constrains continuation by law, likelihood, or admissibility",
+    "☱": "sustains, remembers, and spends the current process body",
+    "△": "ends local process by exposing form to the world"
+  },
   "packet_network_position": {
     "status": "derived_mode",
     "definition": "packet-network is a packet body interpreted as receptive admission surface",

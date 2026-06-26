@@ -32,85 +32,227 @@
     {
       "glyph": "▽",
       "name": "FLOW",
-      "layers": ["⋯"],
+      "layers": [
+        "⋯"
+      ],
       "core": "x→f→x′",
-      "adjacent": ["☰", "☷", "☴"]
+      "adjacent": [
+        "☰",
+        "☷",
+        "☴"
+      ]
     },
     {
       "glyph": "☰",
       "name": "CONNECT",
-      "layers": ["⋯", "⊞"],
+      "layers": [
+        "⋯",
+        "⊞"
+      ],
       "core": "a+b→rel",
-      "adjacent": ["▽", "☷", "☴", "☵"]
+      "adjacent": [
+        "▽",
+        "☷",
+        "☴",
+        "☵"
+      ]
     },
     {
       "glyph": "☷",
       "name": "DISSOLVE",
-      "layers": ["⋯", "⊞"],
+      "layers": [
+        "⋯",
+        "⊞"
+      ],
       "core": "rel→parts",
-      "adjacent": ["▽", "☰", "☴", "☳"]
+      "adjacent": [
+        "▽",
+        "☰",
+        "☴",
+        "☳"
+      ]
     },
     {
       "glyph": "☴",
       "name": "OBSERVE",
-      "layers": ["⊞"],
+      "layers": [
+        "⊞"
+      ],
       "core": "observe(x)",
-      "adjacent": ["▽", "☰", "☷", "☵", "☳", "☱"]
+      "adjacent": [
+        "▽",
+        "☰",
+        "☷",
+        "☵",
+        "☳",
+        "☱"
+      ]
     },
     {
       "glyph": "☵",
       "name": "ENCODE",
-      "layers": ["⊞", "◈"],
+      "layers": [
+        "⊞",
+        "◈"
+      ],
       "core": "x*→pattern",
-      "adjacent": ["☰", "☴", "☱", "☳", "☲"]
+      "adjacent": [
+        "☰",
+        "☴",
+        "☱",
+        "☳",
+        "☲"
+      ]
     },
     {
       "glyph": "☲",
       "name": "CYCLE",
-      "layers": ["◈"],
+      "layers": [
+        "◈"
+      ],
       "core": "iterate fⁿ(x)",
-      "adjacent": ["☵", "☶", "△", "☱"]
+      "adjacent": [
+        "☵",
+        "☶",
+        "△",
+        "☱"
+      ]
     },
     {
       "glyph": "☶",
       "name": "LOGIC",
-      "layers": ["◈"],
+      "layers": [
+        "◈"
+      ],
       "core": "rules(x)",
-      "adjacent": ["☳", "☲", "☱", "△"]
+      "adjacent": [
+        "☳",
+        "☲",
+        "☱",
+        "△"
+      ]
     },
     {
       "glyph": "☳",
       "name": "CHOOSE",
-      "layers": ["⊞", "◈"],
+      "layers": [
+        "⊞",
+        "◈"
+      ],
       "core": "{paths}→1",
-      "adjacent": ["☷", "☴", "☱", "☵", "☶"]
+      "adjacent": [
+        "☷",
+        "☴",
+        "☱",
+        "☵",
+        "☶"
+      ]
     },
     {
       "glyph": "☱",
       "name": "RUNTIME",
-      "layers": ["◈"],
+      "layers": [
+        "◈"
+      ],
       "core": "ctx→state′",
-      "adjacent": ["☴", "△", "☵", "☳", "☶", "☲"]
+      "adjacent": [
+        "☴",
+        "△",
+        "☵",
+        "☳",
+        "☶",
+        "☲"
+      ]
     },
     {
       "glyph": "△",
       "name": "MANIFEST",
-      "layers": ["▲"],
+      "layers": [
+        "▲"
+      ],
       "core": "output",
-      "adjacent": ["☱", "☲", "☶"]
+      "adjacent": [
+        "☱",
+        "☲",
+        "☶"
+      ]
     }
   ],
   "orders": {
     "canonical_order_source": "kabbalah_tree_operator_binding",
     "chronological_order_source": "source_appearance_and_trace_reading",
-    "chronological_order": ["▽", "☰", "☷", "☴", "☵", "☲", "☶", "☳", "☱", "△"],
-    "chronological_operator_order": ["FLOW", "CONNECT", "DISSOLVE", "OBSERVE", "ENCODE", "CYCLE", "LOGIC", "CHOOSE", "RUNTIME", "MANIFEST"],
-    "canonical_order": ["▽", "☰", "☷", "☵", "☳", "☴", "☲", "☶", "☱", "△"],
-    "canonical_operator_order": ["FLOW", "CONNECT", "DISSOLVE", "ENCODE", "CHOOSE", "OBSERVE", "CYCLE", "LOGIC", "RUNTIME", "MANIFEST"],
-    "inventory_order": ["▽", "☰", "☷", "☵", "☳", "☴", "☲", "☶", "☱", "△"],
-    "trace_order": ["▽", "☰", "☷", "☴", "☵", "☲", "☶", "☳", "☱", "△"],
-    "chronological_full_trace": ["▽", "☰", "☷", "☴", "☵", "☲", "☶", "☳", "☱", "△"],
-    "canonical_full_trace": ["▽", "☰", "☷", "☵", "☳", "☴", "☲", "☶", "☱", "△"]
+    "chronological_order": [
+      "▽",
+      "☰",
+      "☷",
+      "☴",
+      "☵",
+      "☲",
+      "☶",
+      "☳",
+      "☱",
+      "△"
+    ],
+    "canonical_order": [
+      "▽",
+      "☰",
+      "☷",
+      "☵",
+      "☳",
+      "☴",
+      "☲",
+      "☶",
+      "☱",
+      "△"
+    ],
+    "inventory_order": [
+      "▽",
+      "☰",
+      "☷",
+      "☵",
+      "☳",
+      "☴",
+      "☲",
+      "☶",
+      "☱",
+      "△"
+    ],
+    "trace_order": [
+      "▽",
+      "☰",
+      "☷",
+      "☴",
+      "☵",
+      "☲",
+      "☶",
+      "☳",
+      "☱",
+      "△"
+    ],
+    "chronological_full_trace": [
+      "▽",
+      "☰",
+      "☷",
+      "☴",
+      "☵",
+      "☲",
+      "☶",
+      "☳",
+      "☱",
+      "△"
+    ],
+    "canonical_full_trace": [
+      "▽",
+      "☰",
+      "☷",
+      "☵",
+      "☳",
+      "☴",
+      "☲",
+      "☶",
+      "☱",
+      "△"
+    ]
   },
   "state_transfer": {
     "trace": "topology-constrained state packet",

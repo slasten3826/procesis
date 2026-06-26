@@ -14,20 +14,20 @@
   "exclusions": {
     "ExampleLens": "template, not a domain optic"
   },
-  "canonical_operator_order": [
-    "FLOW",
-    "CONNECT",
-    "DISSOLVE",
-    "ENCODE",
-    "CHOOSE",
-    "OBSERVE",
-    "CYCLE",
-    "LOGIC",
-    "RUNTIME",
-    "MANIFEST"
+  "canonical_order": [
+    "▽",
+    "☰",
+    "☷",
+    "☵",
+    "☳",
+    "☴",
+    "☲",
+    "☶",
+    "☱",
+    "△"
   ],
   "lenses": {
-    "Addiction": "addiction as a self-reinforcing process program where agency loses CHOOSE to compulsive CYCLE",
+    "Addiction": "addiction as a self-reinforcing process program where agency loses ☳ to compulsive ☲",
     "ADHD": "ADHD as an attention and executive-function regulation profile",
     "Agency": "agency as the capacity to originate action, choose, and accept consequence",
     "Biology": "living systems as process bodies with metabolism, regulation, memory, aging, and irreversible fate",
@@ -50,7 +50,7 @@
     "Training": "machine learning as behavior formation through data, gradients, loss, reinforcement, and deployment"
   },
   "operators": {
-    "FLOW": {
+    "▽": {
       "Addiction": "dopamine and neurotransmitter flow, movement toward the addictive object, stream of impulse and craving",
       "ADHD": "unstable attention flow, racing thought, motor activity, impulsive action",
       "Agency": "inner energy, intention, will, and accepted consequence moving outward from the acting source",
@@ -73,7 +73,7 @@
       "Sociology": "information, migration, capital, innovation, and social movement spreading through society",
       "Training": "training data, gradient flow, and continuous update signal through a model"
     },
-    "CONNECT": {
+    "☰": {
       "Addiction": "stimulus-reward association, strengthened neural pathway, and emotional attachment to the addictive object",
       "ADHD": "creative but unstable association between ideas, hyperfocus coupling, and weak linkage to distant consequences",
       "Agency": "relations formed from authorship, recognition of other agency, and owned links between choice and consequence",
@@ -96,7 +96,7 @@
       "Sociology": "social network formation, norm creation, institution building, group formation, and interpersonal tie",
       "Training": "attention, weight matrices as encoded relations, and corpus-driven association"
     },
-    "DISSOLVE": {
+    "☷": {
       "Addiction": "detox, withdrawal, weakened reinforcement pathway, and cognitive distancing",
       "ADHD": "collapse of concentration, forgetting, interrupted action, loss of interest, and boredom dissociation",
       "Agency": "discarding false identities, imposed roles, fear barriers, and actions misaligned with principle",
@@ -119,7 +119,7 @@
       "Sociology": "institutional collapse, anomie, community disintegration, tradition loss, and revolutionary destruction",
       "Training": "regularization, dropout, weight decay, pruning, and suppression of noise or false correlation"
     },
-    "ENCODE": {
+    "☵": {
       "Addiction": "engram, ritual schema, justification narrative, and biochemical pattern",
       "ADHD": "prefrontal and basal-ganglia patterns, genetic predisposition, procrastination scripts, and novelty-seeking habit",
       "Agency": "self-identification as author, goal encoding, personal principle, and promise",
@@ -142,7 +142,7 @@
       "Sociology": "social code, language, symbol, law, ideology, cultural narrative, and demographic statistic",
       "Training": "representation learning, embeddings, and weights as compressed memory of a distribution"
     },
-    "CHOOSE": {
+    "☳": {
       "Addiction": "decision to use or abstain, will effort, alternative activity, and compulsive loss of choice",
       "ADHD": "difficulty selecting priority, impulsive short-term reward choice, and failure to choose focus deliberately",
       "Agency": "conscious volitional selection among alternatives with accepted responsibility for consequences",
@@ -165,7 +165,7 @@
       "Sociology": "collective decision, constrained individual choice, voting, and social action strategy",
       "Training": "gradient direction, sampling, reinforcement signal, and selection of what to strengthen or suppress"
     },
-    "OBSERVE": {
+    "☴": {
       "Addiction": "self-monitoring, craving awareness, trigger tracking, consequence reflection, and external therapeutic observation",
       "ADHD": "self-monitoring, time observation, and often post-factum awareness of distraction",
       "Agency": "self-awareness, introspection, motive observation, consequence reading, and responsibility boundary detection",
@@ -188,7 +188,7 @@
       "Sociology": "survey, observation, data analysis, ethnography, social indicator monitoring, and social reflexivity",
       "Training": "loss measurement, evaluation, benchmark, and partial reading where loss is not identical to what was learned"
     },
-    "CYCLE": {
+    "☲": {
       "Addiction": "craving, use, euphoria, crash, guilt or withdrawal, and renewed craving",
       "ADHD": "procrastination-panic, hyperfocus-exhaustion, daily disruption, and impulsive action-regret cycle",
       "Agency": "intention, assessment, choice, action, reflection, and repeated responsibility testing",
@@ -211,7 +211,7 @@
       "Sociology": "social reproduction, economic cycle, generational turnover, fashion cycle, revolution and stagnation periods",
       "Training": "epochs, iterations, reinforcement loops, and repeated stabilization of weights"
     },
-    "LOGIC": {
+    "☶": {
       "Addiction": "reinforcement rule, tolerance increase, and compulsive repetition despite negative consequence",
       "ADHD": "executive-function deficit logic affecting planning, organization, working memory, and emotion regulation",
       "Agency": "inner value system, causal responsibility, and ethical rather than conformist reasoning",
@@ -234,7 +234,7 @@
       "Sociology": "social action theory, functionalism, conflict theory, exchange theory, and interaction rule",
       "Training": "alignment constraints, safety rules, and content filters integrated into weights or added as runtime filters"
     },
-    "RUNTIME": {
+    "☱": {
       "Addiction": "brain reward system, prefrontal cortex, social context, domestic context, and object availability",
       "ADHD": "prefrontal cortex, reward system, stimulation level, external structure, and deadline environment",
       "Agency": "inner world, social context, and physical body as environment for volitional execution",
@@ -257,7 +257,7 @@
       "Sociology": "society, historical-cultural formation, city, organization, and virtual space",
       "Training": "GPU, TPU, compute substrate, inference engine, and deployment environment"
     },
-    "MANIFEST": {
+    "△": {
       "Addiction": "compulsive behavior, withdrawal symptom, tremor, social dysfunction, personality change, and visible addictive program",
       "ADHD": "disorganization, hyperactivity or inner restlessness, lateness, unfinished projects, impulsive speech or action",
       "Agency": "action chosen by the agent, visible result, accepted responsibility, reality change, and personal integrity",

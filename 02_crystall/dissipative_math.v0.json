@@ -101,44 +101,61 @@
     {
       "name": "generate",
       "signature": "generate(runtime, seed, noise) -> signal",
-      "operator_binding": ["FLOW"]
+      "operator_binding": [
+        "▽"
+      ]
     },
     {
       "name": "encode",
       "signature": "encode(signal) -> structure",
-      "operator_binding": ["ENCODE"],
+      "operator_binding": [
+        "☵"
+      ],
       "loss": "encoding discards differences"
     },
     {
       "name": "sustain",
       "signature": "sustain(structure, flow) -> state'",
-      "operator_binding": ["RUNTIME", "CYCLE"]
+      "operator_binding": [
+        "☱",
+        "☲"
+      ]
     },
     {
       "name": "choose",
       "signature": "choose({path_1 ... path_n}, pressure) -> path_k",
-      "operator_binding": ["CHOOSE"],
+      "operator_binding": [
+        "☳"
+      ],
       "cost": "suppression of non-selected alternatives"
     },
     {
       "name": "decay",
       "signature": "decay(structure, dt) -> structure'",
-      "operator_binding": ["DISSOLVE"]
+      "operator_binding": [
+        "☷"
+      ]
     },
     {
       "name": "observe",
       "signature": "observe(state, runtime) -> measurement",
-      "operator_binding": ["OBSERVE"]
+      "operator_binding": [
+        "☴"
+      ]
     },
     {
       "name": "logic_filter",
       "signature": "logic_filter(signal_or_structure, rules) -> accepted_or_rejected",
-      "operator_binding": ["LOGIC"]
+      "operator_binding": [
+        "☶"
+      ]
     },
     {
       "name": "manifest",
       "signature": "manifest(structure, runtime) -> observable",
-      "operator_binding": ["MANIFEST"],
+      "operator_binding": [
+        "△"
+      ],
       "loss": "manifestation exports a bounded representation, not the full process"
     }
   ],

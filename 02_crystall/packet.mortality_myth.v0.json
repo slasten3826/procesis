@@ -132,16 +132,16 @@
     }
   ],
   "processlang_mapping": {
-    "FLOW": "the one-life run begins as active process",
-    "CONNECT": "body, world, bridge, and tick become coupled",
-    "DISSOLVE": "bad continuation, stale loops, and false life are cut",
-    "ENCODE": "death residue compresses failed life into transmissible trace",
-    "CHOOSE": "each tick selects continuation, recovery, combat, progress, drift, or void",
-    "OBSERVE": "the body/world state is read as pressure and consequence",
-    "CYCLE": "life continues only across payable ticks",
-    "LOGIC": "motion without paid consequence is rejected as false life",
-    "RUNTIME": "the substrate hosts the body and spends its budget",
-    "MANIFEST": "death or visible action exposes the packet's state to the world"
+    "▽": "the one-life run begins as active process",
+    "☰": "body, world, bridge, and tick become coupled",
+    "☷": "bad continuation, stale loops, and false life are cut",
+    "☵": "death residue compresses failed life into transmissible trace",
+    "☳": "each tick selects continuation, recovery, combat, progress, drift, or void",
+    "☴": "the body/world state is read as pressure and consequence",
+    "☲": "life continues only across payable ticks",
+    "☶": "motion without paid consequence is rejected as false life",
+    "☱": "the substrate hosts the body and spends its budget",
+    "△": "death or visible action exposes the packet's state to the world"
   },
   "canonical_formula": [
     "packet_life = body + clock + pressure + budget + consequence",
