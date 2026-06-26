@@ -94,6 +94,17 @@
     "failure_modes": {
       "type": "array",
       "items": { "type": "string" }
+    },
+    "ingestion_proof": {
+      "type": "object",
+      "properties": {
+        "full_read_claim_requires": { "type": "array", "items": { "type": "string" } },
+        "if_incomplete": { "type": "string" },
+        "raw_operator_invariants": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        }
+      }
     }
   }
 }

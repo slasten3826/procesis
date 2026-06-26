@@ -21,7 +21,8 @@
       "role": "addressability, maps, indexes, loading order, source-to-module routing",
       "examples": [
         "layers.v0.json",
-        "reading_order.v0.json"
+        "reading_order.v0.json",
+        "ingestion_tests.v0.json"
       ],
       "rule": "make every source and module addressable"
     },

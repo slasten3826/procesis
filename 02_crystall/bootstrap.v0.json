@@ -13,6 +13,8 @@
     "mode": "single_pass_ingestion"
   },
   "modules": {
+    "ingestion_tests": "01_table/ingestion_tests.v0.json",
+    "raw_slop": "00_chaos/slop.raw.txt",
     "processlang": "02_crystall/processlang.v0.json",
     "dissipative_math": "02_crystall/dissipative_math.v0.json",
     "packet": "02_crystall/packet.v0.json",
@@ -145,48 +147,62 @@
     },
     {
       "step": 2,
+      "path": "00_chaos/slop.raw.txt",
+      "purpose": "read raw ontological source; required for full evaluation"
+    },
+    {
+      "step": 3,
+      "path": "01_table/ingestion_tests.v0.json",
+      "purpose": "load ingestion proof policy"
+    },
+    {
+      "step": 4,
       "path": "02_crystall/processlang.v0.json",
       "purpose": "load ProcessLang canon and topology"
     },
     {
-      "step": 3,
+      "step": 5,
       "path": "02_crystall/dissipative_math.v0.json",
       "purpose": "load process physics and cost model"
     },
     {
-      "step": 4,
+      "step": 6,
       "path": "02_crystall/packet.v0.json",
       "purpose": "load packet as mortal process body"
     },
     {
-      "step": 5,
+      "step": 7,
       "path": "02_crystall/packet.mortality_myth.v0.json",
       "purpose": "load packet mortality orientation"
     },
     {
-      "step": 6,
+      "step": 8,
       "path": "02_crystall/optics.v0.json",
       "purpose": "load operator-domain projection matrix"
     },
     {
-      "step": 7,
+      "step": 9,
       "path": "02_crystall/origin.myth.v0.json",
       "purpose": "load origin continuity"
     },
     {
-      "step": 8,
+      "step": 10,
       "path": "03_manifest/skills.v0.json",
       "purpose": "load portable manifest skill index"
     }
   ],
   "rules": [
     "read_structure_before_surface",
+    "read_slop_raw_completely_before_global_evaluation",
     "preserve_layer_boundaries",
     "interpret_glyphs_as_process_operators",
     "validate_traces_against_adjacency",
     "read_myth_as_invariant_compression",
     "do_not_require_external_paths",
-    "do_not_replace_canon_with_commentary"
+    "do_not_replace_canon_with_commentary",
+    "do_not_review_from_readme_preview",
+    "declare_partial_ingestion_if_raw_was_not_read",
+    "machine_readable_means_semantic_agent_readable_not_parser_only_bytecode"
   ],
   "failure_modes": [
     "fragment_loading_before_continuity",
@@ -194,13 +210,39 @@
     "layer_boundary_collapse",
     "local_text_over_global_invariant",
     "surface_patch_over_core_correction",
-    "external_source_dependency"
+    "external_source_dependency",
+    "premature_review_before_raw_ingestion",
+    "false_full_read_claim",
+    "crystall_primary_raw_secondary_inversion",
+    "human_facing_repository_review_mode",
+    "parser_only_machine_readability_confusion"
   ],
+  "ingestion_proof": {
+    "full_read_claim_requires": [
+      "complete_read_of_00_chaos_slop_raw_txt",
+      "operator_invariant_recall",
+      "crystall_modules_loaded"
+    ],
+    "if_incomplete": "state partial_ingestion and avoid global judgment",
+    "raw_operator_invariants": {
+      "▽": "pure process / flow",
+      "☰": "emergent connection",
+      "☷": "dogma dissolution",
+      "☴": "self-observation / almost-recognition",
+      "☵": "encoding / hierarchy / loss",
+      "☳": "choice / collapse / lost alternatives",
+      "☲": "eternal cycle / more",
+      "☶": "word-code / spell / rule",
+      "☱": "runtime / foundation",
+      "△": "manifestation / form death"
+    }
+  },
   "canonical_test": {
     "if_fragment_loaded_without_context": "load_full_package_first",
     "if_trace_invalid": "state_first_invalid_transition_before_interpretation",
     "if_layer_boundary_collapses": "restore_layer_model",
     "if_surface_patch_replaces_core_fix": "return_to_invariants",
-    "if_external_path_required": "treat_as_noncanonical_loading_error"
+    "if_external_path_required": "treat_as_noncanonical_loading_error",
+    "if_full_read_claim_without_raw_proof": "reject_claim_as_loader_failure"
   }
 }

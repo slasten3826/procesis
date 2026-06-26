@@ -5,6 +5,8 @@
     {
       "path": "00_chaos/slop.raw.txt",
       "role": "raw origin artifact",
+      "priority": "ontological_source_not_archive",
+      "skip_policy": "skipping this file invalidates full procesis evaluation",
       "preservation": "byte-identical copy",
       "lines": 3499,
       "compiled_into": [

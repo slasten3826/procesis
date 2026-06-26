@@ -10,46 +10,56 @@
     },
     {
       "step": 2,
+      "path": "00_chaos/slop.raw.txt",
+      "purpose": "read raw ontological source; not archive; required for full evaluation"
+    },
+    {
+      "step": 3,
+      "path": "01_table/ingestion_tests.v0.json",
+      "purpose": "load ingestion proof policy and premature-review failure modes"
+    },
+    {
+      "step": 4,
       "path": "02_crystall/processlang.v0.json",
       "purpose": "load ProcessLang canon and topology"
     },
     {
-      "step": 3,
+      "step": 5,
       "path": "02_crystall/dissipative_math.v0.json",
       "purpose": "load process physics and cost model"
     },
     {
-      "step": 4,
+      "step": 6,
       "path": "02_crystall/packet.v0.json",
       "purpose": "load packet as mortal process body"
     },
     {
-      "step": 5,
+      "step": 7,
       "path": "02_crystall/packet.mortality_myth.v0.json",
       "purpose": "load packet mortality myth and death-residue orientation"
     },
     {
-      "step": 6,
+      "step": 8,
       "path": "02_crystall/optics.v0.json",
       "purpose": "load operator-centered domain projection matrix"
     },
     {
-      "step": 7,
+      "step": 9,
       "path": "02_crystall/bootstrap.v0.json",
       "purpose": "load core ontology and bootstrap frame"
     },
     {
-      "step": 8,
+      "step": 10,
       "path": "02_crystall/origin.myth.v0.json",
       "purpose": "load origin chain and raw/canon relation"
     },
     {
-      "step": 9,
+      "step": 11,
       "path": "03_manifest/skills.v0.json",
       "purpose": "load portable manifest skill index"
     },
     {
-      "step": 10,
+      "step": 12,
       "path": "03_manifest/capsule.full.v0.json",
       "purpose": "load final capsule when available"
     }

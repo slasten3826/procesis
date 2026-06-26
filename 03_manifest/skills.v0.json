@@ -31,6 +31,8 @@
       "canonical_sources": [
         "01_table/layers.v0.json",
         "01_table/reading_order.v0.json",
+        "01_table/ingestion_tests.v0.json",
+        "00_chaos/slop.raw.txt",
         "02_crystall/processlang.v0.json",
         "02_crystall/dissipative_math.v0.json",
         "02_crystall/packet.v0.json",

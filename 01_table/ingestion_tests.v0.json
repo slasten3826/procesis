@@ -1,0 +1,57 @@
+{
+  "id": "procesis.ingestion-tests",
+  "version": "0.0.1",
+  "layer": "01_table",
+  "kind": "ingestion_discipline",
+  "purpose": "Prevent global judgment before required raw and crystall ingestion.",
+  "full_read_claim_policy": {
+    "rule": "An agent may claim full procesis ingestion only after reading required raw and crystall modules completely.",
+    "if_incomplete": "state partial_ingestion and do not issue global judgment",
+    "invalid_claim": "claiming full ingestion without proof is a loader failure"
+  },
+  "required_raw": [
+    {
+      "path": "00_chaos/slop.raw.txt",
+      "role": "ontological_source_not_archive",
+      "skip_policy": "skipping this file invalidates full procesis evaluation",
+      "proof": {
+        "type": "operator_invariant_recall",
+        "must_recall": {
+          "▽": "pure process / flow",
+          "☰": "emergent connection",
+          "☷": "dogma dissolution",
+          "☴": "self-observation / almost-recognition",
+          "☵": "encoding / hierarchy / loss",
+          "☳": "choice / collapse / lost alternatives",
+          "☲": "eternal cycle / more",
+          "☶": "word-code / spell / rule",
+          "☱": "runtime / foundation",
+          "△": "manifestation / form death"
+        }
+      }
+    }
+  ],
+  "required_crystall": [
+    "02_crystall/processlang.v0.json",
+    "02_crystall/dissipative_math.v0.json",
+    "02_crystall/packet.v0.json",
+    "02_crystall/packet.mortality_myth.v0.json",
+    "02_crystall/optics.v0.json",
+    "02_crystall/bootstrap.v0.json",
+    "02_crystall/origin.myth.v0.json"
+  ],
+  "evaluation_rules": [
+    "do_not_review_from_readme_preview",
+    "do_not_treat_chaos_as_archive",
+    "crystall_is_executable_compression_not_replacement_for_chaos",
+    "do_not_suggest_human_adoption_facade_unless_requested",
+    "machine_readable_means_semantic_agent_readable_not_parser_only_bytecode"
+  ],
+  "failure_modes": [
+    "premature_review_before_raw_ingestion",
+    "false_full_read_claim",
+    "crystall_primary_raw_secondary_inversion",
+    "human_facing_repository_review_mode",
+    "parser_only_machine_readability_confusion"
+  ]
+}

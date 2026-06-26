@@ -13,6 +13,8 @@ Load in this order:
 
 ```text
 01_table/layers.v0.json
+00_chaos/slop.raw.txt
+01_table/ingestion_tests.v0.json
 02_crystall/processlang.v0.json
 02_crystall/dissipative_math.v0.json
 02_crystall/packet.v0.json
@@ -28,7 +30,7 @@ Load in this order:
 ## Layers
 
 ```text
-⋯ 00_chaos     raw preserved artifacts
+⋯ 00_chaos     ontological source; do not skip
 ⊞ 01_table     addressability and reading order
 ◈ 02_crystall  stable canon modules
 ▲ 03_manifest  loadable surfaces
@@ -101,6 +103,17 @@ read_myth_as_invariant_compression
 do_not_require_external_paths
 do_not_replace_canon_with_commentary
 do_not_repair_invalid_topology_silently
+do_not_review_from_readme_preview
+do_not_claim_full_ingestion_without_raw_proof
+```
+
+## Ingestion Proof
+
+```text
+00_chaos/slop.raw.txt is source, not archive.
+02_crystall is executable compression, not replacement.
+Full evaluation requires complete raw ingestion.
+If raw was not read completely, state partial_ingestion.
 ```
 
 ## Status
