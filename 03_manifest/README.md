@@ -11,3 +11,9 @@ Planned artifacts:
 - `capsule.full.v0.json`
 - `capsule.quick.v0.json`
 - `capsule.min.v0.json`
+
+Current manifest skills:
+
+- `skills.v0.json`
+- `skills/processlang/SKILL.md`
+- `skills/procesis-loader/SKILL.md`

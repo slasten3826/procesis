@@ -81,6 +81,11 @@ Do not flatten the layers.
 - English crystall form, self-contained, no external source dependency
 - `ExampleLens` is excluded as a template
 
+`03_manifest/skills.v0.json` indexes the current portable manifest skills:
+
+- `processlang`
+- `procesis-loader`
+
 ## Raw Origin
 
 ```text
@@ -95,4 +100,5 @@ Raw artifact. Preserve unchanged.
 stage: early crystallization
 capsule: pending
 runtime: pending
+manifest skills: processlang, procesis-loader
 ```

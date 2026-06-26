@@ -1,0 +1,49 @@
+{
+  "id": "procesis.manifest.skills",
+  "version": "0.0.1",
+  "layer": "03_manifest",
+  "kind": "skill_index",
+  "audience": "machine",
+  "purpose": "Expose portable procesis loading surfaces without replacing crystall canon.",
+  "rule": "Skills are loadable entry surfaces. Canon remains in 02_crystall.",
+  "skills": [
+    {
+      "id": "processlang",
+      "path": "03_manifest/skills/processlang/SKILL.md",
+      "use_when": [
+        "reading ProcessLang glyph traces",
+        "validating ProcessLang adjacency",
+        "writing compact PL-style process traces"
+      ],
+      "canonical_sources": [
+        "02_crystall/processlang.v0.json",
+        "02_crystall/processlang/canon.lua"
+      ]
+    },
+    {
+      "id": "procesis-loader",
+      "path": "03_manifest/skills/procesis-loader/SKILL.md",
+      "use_when": [
+        "loading the procesis corpus",
+        "auditing corpus self-containment",
+        "explaining current procesis module roles"
+      ],
+      "canonical_sources": [
+        "01_table/layers.v0.json",
+        "01_table/reading_order.v0.json",
+        "02_crystall/processlang.v0.json",
+        "02_crystall/dissipative_math.v0.json",
+        "02_crystall/packet.v0.json",
+        "02_crystall/packet.mortality_myth.v0.json",
+        "02_crystall/optics.v0.json",
+        "02_crystall/bootstrap.v0.json",
+        "02_crystall/origin.myth.v0.json"
+      ]
+    }
+  ],
+  "constraints": [
+    "No skill may introduce an external source dependency.",
+    "No skill may override ProcessLang topology.",
+    "No skill may flatten chaos, table, crystall, and manifest into one layer."
+  ]
+}

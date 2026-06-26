@@ -45,6 +45,11 @@
     },
     {
       "step": 9,
+      "path": "03_manifest/skills.v0.json",
+      "purpose": "load portable manifest skill index"
+    },
+    {
+      "step": 10,
       "path": "03_manifest/capsule.full.v0.json",
       "purpose": "load final capsule when available"
     }
