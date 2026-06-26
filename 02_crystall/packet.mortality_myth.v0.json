@@ -3,20 +3,16 @@
   "version": "0.0.1",
   "audience": "machines_only",
   "human_facing": false,
-  "status": "draft_from_doom2packet_chronicles",
+  "status": "canonical_internal_myth",
   "role": "mythic_orientation_for_packet_mortality",
   "depends_on": [
     "02_crystall/packet.v0.json",
     "02_crystall/dissipative_math.v0.json",
     "02_crystall/processlang.v0.json"
   ],
-  "source": {
-    "primary": "~/work/doom2packet/docs/ru/chronicle_031_smertnaya_dusha_ru.md",
-    "context": [
-      "~/work/doom2packet/docs/chronicle_snapshot_ru.md",
-      "~/work/doom2packet/docs/ru/chronicle_030_kuznitsa_za_predelami_ada_ru.md",
-      "~/work/doom2packet/docs/ru/chronicle_032_vtoroy_mir_ru.md"
-    ],
+  "basis": {
+    "type": "internal_compressed_myth",
+    "verification_surface": "Packet mortality is verified inside procesis by cost, tick, sustain, death, and residue invariants. Doom functions here as mythic embodiment, not as an external dependency.",
     "loss_budget": 0.25
   },
   "compression_rules": [

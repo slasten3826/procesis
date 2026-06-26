@@ -12,6 +12,7 @@
     "dissipative_math": "02_crystall/dissipative_math.v0.json",
     "packet": "02_crystall/packet.v0.json",
     "packet_mortality_myth": "02_crystall/packet.mortality_myth.v0.json",
+    "optics": "02_crystall/optics.v0.json",
     "origin_myth": "02_crystall/origin.myth.v0.json",
     "raw_slop": "00_chaos/slop.raw.txt"
   },
@@ -201,7 +202,7 @@
     }
   ],
   "lens_model": {
-    "description": "A lens maps the ten ProcessLang operators into a specific domain. Domain differences do not change operator topology.",
+    "description": "A lens maps the ten ProcessLang operators into a specific domain. Domain differences do not change operator topology. Canonical optics live in 02_crystall/optics.v0.json.",
     "canonical_order_source": "kabbalah_tree_operator_binding",
     "chronological_order_source": "source_appearance_and_trace_reading",
     "canonical_operator_order": [
@@ -248,7 +249,8 @@
       "Psychology",
       "Psychopathology",
       "Quantum",
-      "Sociology"
+      "Sociology",
+      "Training"
     ]
   },
   "agent_contract": {

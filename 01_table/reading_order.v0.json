@@ -30,16 +30,21 @@
     },
     {
       "step": 6,
+      "path": "02_crystall/optics.v0.json",
+      "purpose": "load operator-centered domain projection matrix"
+    },
+    {
+      "step": 7,
       "path": "02_crystall/bootstrap.v0.json",
       "purpose": "load core ontology and bootstrap frame"
     },
     {
-      "step": 7,
+      "step": 8,
       "path": "02_crystall/origin.myth.v0.json",
       "purpose": "load origin chain and raw/canon relation"
     },
     {
-      "step": 8,
+      "step": 9,
       "path": "03_manifest/capsule.full.v0.json",
       "purpose": "load final capsule when available"
     }

@@ -8,10 +8,8 @@
     "02_crystall/processlang.v0.json",
     "02_crystall/dissipative_math.v0.json"
   ],
-  "research_anchors": {
+  "internal_anchors": {
     "zig_packet_prototype": "00_chaos/packet_zig.raw/",
-    "doom2packet_mortality_probe": "~/work/doom2packet",
-    "packet_slop_neural_transfer_probe": "~/work/packetLearning/packet-slop",
     "mortality_myth": "02_crystall/packet.mortality_myth.v0.json"
   },
   "thesis": "Packet is a mortal executable process body: it exists only while its process cost can be paid, and death is part of its semantics.",
@@ -39,10 +37,9 @@
     "continuation must be earned",
     "bad trajectories must be allowed to die"
   ],
-  "source_reading": {
+  "internal_reading": {
     "zig_prototype": "Shows the invariant physically: substrate, PU budget, chaos ticks, boundary crystallization, calm execution, tension, manifest, and halt.",
-    "doom2packet": "Shows mortality operationally: body can die, soul/process can also die from wasted existence, and only compact death residue should pass forward.",
-    "packet_slop": "Transfers packet logic onto neural/process rails; useful as research trace, not the primary invariant source."
+    "mortality_myth": "Shows the invariant mythically: body continuity is not packet identity, bad continuation can burn the current packet, and only compact death residue should pass forward."
   },
   "layers": [
     {
@@ -123,7 +120,7 @@
       }
     ],
     "residue_rule": "Death may leave minimal process residue, not preserved identity.",
-    "doom2packet_residue_formula": "this led to death; do not repeat it"
+    "death_residue_formula": "this led to death; do not repeat it"
   },
   "economics": {
     "PU": "process life capacity, not external accounting decoration",
@@ -182,8 +179,6 @@
   },
   "implementation_relation": {
     "zig": "raw invariant body; closest current source for packet mortality",
-    "doom": "embodiment proof; death and residue become operationally visible",
-    "packet_slop": "neural transfer attempt; useful to understand forms-in-time and Bayesian runtime",
     "lua": "likely research/runtime manifestation after law stabilizes",
     "network": "boundary/export behavior, not packet identity"
   },

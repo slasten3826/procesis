@@ -28,6 +28,7 @@ Do not flatten the layers.
 02_crystall/dissipative_math.v0.json
 02_crystall/packet.v0.json
 02_crystall/packet.mortality_myth.v0.json
+02_crystall/optics.v0.json
 02_crystall/bootstrap.v0.json
 02_crystall/origin.myth.v0.json
 ```
@@ -72,6 +73,13 @@ Do not flatten the layers.
 - body continuity is not packet identity continuity
 - bad life may kill the current packet
 - death may pass residue without resurrection
+
+`02_crystall/optics.v0.json` defines optics as operator-centered domain projections:
+
+- one ProcessLang operator maps to many domain readings
+- domain changes interpretation, not operator identity
+- English crystall form, self-contained, no external source dependency
+- `ExampleLens` is excluded as a template
 
 ## Raw Origin
 
